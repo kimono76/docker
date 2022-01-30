@@ -14,6 +14,8 @@ used to run an already-created container. Returns the id of the container
 
 used to run an already-created container and "attach" to the terminal, so It watches for the output from the container and shows It in the terminal
 
+used to remove all the local stopped containers and their cache
+
 ```sh
 docker version
 docker run hello-world
@@ -32,5 +34,7 @@ docker create <image_name>
 docker start <container_id>
 
 docker start -a <container_id>
+
+docker system prune
 
 ```
